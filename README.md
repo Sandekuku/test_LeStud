@@ -38,6 +38,7 @@ Time to be creative, and efficient. Do what you think would be the best for your
 
 Send us the project and answer to those simple questions : 
 - What bugs did you find ? How did you solve these and why ? 
+
 1-  No user can register because the system say that the name even if there is no other user with this name.
     I found that the problem come from the organisation column so I firstly tried to create the user and put the organisation afterward but it does not correct the bug completely and this newly created user does not appear on the screen. Then I found that on the model this column was specified as unique but even after removing this condition it still does not work.
 
@@ -46,6 +47,7 @@ Send us the project and answer to those simple questions :
 3- The page display an error message project when we want to see the project informations. It says that there is a problem with the use of a toString method. I found the problematic line on the app/src/scenes/project/views.js file at the 74th line. I first just removed the toString method as the name of the project is already a string element in the model. The page then displayed the information about the project but the name was still not on the screen so I checked the object structure on the consol and then saw that it was an two dimension array and the first entry was actually the informations about the project saw I changed the way I accesed to the name of project according to this structure.
     
 - Which feature did you develop and why ? 
+
 I did not add any features because I struggled with the bug solving part as I have manipulated a bit this framework but only to make small modifications so I did not have enough experience to resolve thoses quickly. But I and spend time to read documents and search them to try different things to solve them.
 
 - Do you have any feedback about the code / architecture of the project and what was the difficulty you encountered while doing it ? 
